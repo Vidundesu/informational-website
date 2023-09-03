@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weddings - The Flower Haze</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+    <script src="index.js"></script>
+    <style>
+         #wedding-home{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width:100%;
+            height:50vh;
+            background-image: url(wedding-pics/wedding-1937022_1920.jpg);
+            background-size: cover;
+            background-position-y: 90%;
+        }
+        #home-text{
+            backdrop-filter: brightness(150%);
+            color: #fff;
+            background-color: #d42583;
+            opacity: 55%;
+            padding: 50px;
+            border-radius: 5px;
+        }
+        #home-text h1{
+            opacity: 100%;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 7px;
+        }
+        #text{
+            display: flex;
+            justify-content: center;
+            width:100%;
+            height:max-content;
+        }
+        .weddings{
+            color: #d42583;
+        }
+        #product-idea{
+            text-align: center;
+            max-width: 70%;
+            height: max-content;
+            margin-top: 2%;
+            padding: 30px;
+        }
+        #product-idea span{
+            font-family: 'Lora', serif;
+            font-size: 20px;
+            
+        }
+        .container {
+            padding: 75px 0;
+            margin: 0 auto;
+            width: 90%;
+        }
+        .gallery-wrap {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 70vh;
+        }
+
+        .item {
+            flex: 1;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: none;
+            transition: flex 0.8s ease;
+        }
+        .item:hover {
+            flex: 7;
+        }
+
+        .item-1 {
+            background-image: url(wedding-pics/beach-1854076_1920.jpg);
+        }
+
+        .item-2 {
+            background-image: url(wedding-pics/bouquet-1566272_1920.jpg);
+        }
+
+        .item-3 {
+            background-image: url(wedding-pics/christening-1499314_1920.jpg);
+        }
+
+        .item-4 {
+            background-image: url(wedding-pics/event-6927353_1920.jpg);
+        }
+
+        .item-5 {
+            background-image: url(wedding-pics/events-2609526_1920.jpg);
+        }
+        .item-6{
+            background-image: url(wedding-pics/exclusive-banquet-1812772_1920.jpg);
+        }
+        .item-7{
+            background-image: url(wedding-pics/restaurant-bern-179047_1920.jpg);
+        }
+        .item-8{
+            background-image: url(wedding-pics/table-setting-1170331_1920.jpg);
+        }
+        .item-9{
+            background-image: url(wedding-pics/vintage-van-4288994_1920.jpg);
+        }
+        .item-10{
+            background-image: url(wedding-pics/wedding-1238432_1920.jpg);
+        }
+        .item-11{
+            background-image: url(wedding-pics/wedding-1854074_1920.jpg);
+        }
+        .item-12{
+            background-image: url(wedding-pics/wedding-5955351_1920.jpg);
+        }
+        .item-13{
+            background-image: url(wedding-pics/wedding-flowers-2051724_1920.jpg);
+        }
+        .item-14{
+            background-image: url(wedding-pics/wedding-photography-5582980_1920.jpg);
+        }
+        .social {
+            position: absolute;
+            right: 35px;
+            bottom: 0;
+        }
+        .social img {
+            display: block;
+            width: 32px;
+        }
+        #contact{
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+        #btn-wedding{
+            border-radius: 10px;
+            border: none;
+            background-color:#f7cfe4;
+            padding: 20px;
+            transition: 0.5s;
+        }
+        #btn-wedding:hover{
+            background-color:  #d2599a;
+        }
+    </style>
+</head>
+<body>
+    <div id="wedding-home">
+        <div id="home-text">
+            <h1>WEDDINGS & EVENTS</h1>
+        </div>
+    </div>
+    <div id="navbar-placeholder"style="position: sticky; top: 0%;z-index: 1000;"></div>
+    <div id="text">
+        <div id="product-idea">
+            <span>With a harmonious blend of exquisite flowers and delectable cakes, we are here to transform your special day into an unforgettable symphony of beauty and joy.<span class="weddings"> Our team is dedicated to crafting a bespoke experience that resonates with your unique vision, ensuring that every petal and every layer holds the essence of your love story. </span>Let us be a part of your journey, curating an atmosphere that whispers elegance and celebrates your love in the most enchanting way. Your wedding deserves nothing less than perfection, and we're here to make every moment, every glance, and every bite a cherished memory to last a lifetime.</span>
+        </div>
+    </div>
+    <div id="contact">
+        <a href="contact.html"><input type="submit" value="Contact us" id="btn-wedding"></a> 
+    </div>
+    <div class="container">
+        <div class="gallery-wrap">
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+            <div class="item item-4"></div>
+            <div class="item item-5"></div>
+            <div class="item item-6"></div>
+            <div class="item item-7"></div>
+            <div class="item item-8"></div>
+            <div class="item item-9"></div>
+            <div class="item item-10"></div>
+            <div class="item item-11"></div>
+            <div class="item item-12"></div>
+            <div class="item item-13"></div>
+            <div class="item item-14"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>
+            <div id="footer-item1">
+                <div id="subscribe">
+                    <h2 style="margin-bottom: 20px;">Subscribe to our Newsletter</h2>
+                    <label>Email Address</label>
+                    
+                    <input type="text" name="email" for="email" placeholder="Your Email address" style="::placeholder{left:10%}">
+                    
+                    <input class="button" type="submit" value="Subscribe">
+                </div>
+                <div id="contact">
+                    <div class="mail">
+                        <span type="email">info@hanasumi.com</span>
+                        <br>
+                        <span>+94 112 777 899</span>
+                    </div>
+                    <div class="address">
+                        <span>122 High Level Rd, Maharagama 10280</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-The Flower Haze</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="index.js"></script>
+    <script>
+       setInterval(background, 15000);
+        function background() {
+            let image = ["background/bg1.jpg", "background/bg2.jpg", "background/bg3.jpg", "background/bg4.jpg","background/bg5.jpg","background/bg7.jpg","background/bg8.jpg"];
+            let text = [
+                "A Symphony of Luxury in Every Petal.",
+                "Where Luxury and Nature Embrace.",
+                "Captivating Hearts, One Petal at a Time.",
+                "Where Luxury and Blooms Converge.",
+                "A Gallery of Luxurious Floral Inspirations.",
+                "Where Luxury Finds its Fragrant Expression.",
+                "Unveiled Petal by Petal.",
+                "Where Blooms Reign Supreme.",
+                "Crafting Luxury Through Nature's Beauty.",
+                "Where Luxury Resides Amongst Exquisite Petals and Fragrance.",
+                "A World of Floral Opulence Awaits, Beyond Our Doors.",
+                "Luxury's Floral Tapestry: Where Dreams Take Fragrant Form."
+            ];
+            let random = Math.floor(Math.random() * image.length); 
+            document.getElementById("home").style.backgroundImage = "url("+ image[random] +")";
+            document.getElementById("box-text").innerHTML=text[random];
+        }
+    </script>
+    <link rel="stylesheet" href="style.css" >
+    <style>
+        #home{
+            background-image: url(background/bg3.jpg);
+            background-position-y:50%;
+            background-size:cover;  
+            animation: crossdissolve 15s infinite;
+            width: 100%;
+            height: 75vh;
+            display: flex;
+            align-items: center;
+        }
+        @media  screen and (max-width:900px){
+            
+            #home{
+                justify-content: center;
+            }
+            #box{
+                margin: 0%;
+            }
+        }
+        @media screen and (min-width:900px){
+            #box{
+                margin-left: 100px;
+            }
+        }
+        @keyframes crossdissolve {
+            0%, 100% {
+                opacity: 0;
+            }
+            10%, 90% {
+                opacity: 1;
+         }
+}
+        #box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f7cfe4;
+            opacity: 50%;
+        }
+        #box-text{
+            text-align: center;
+            font-size:clamp(20px, 8vw,60px);
+            font-family: 'Luxurious Script', cursive;
+        }
+        #product-home{
+            margin-top: 50px;
+            padding-top:20px;
+            padding-bottom:10px;
+            height:50vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #product-home-list{
+            
+            display:flex;
+            justify-content: center;
+            flex-wrap:wrap;
+            align-items: center;
+            height:400px;
+            width:80%;
+            gap:1rem;
+        }
+        @media screen and (max-width:1340px ) and (max-height:980px){
+            #product-home{
+                height:80vh;
+            }
+        }
+        @media screen and (max-width:530px) {
+                #product-home{
+                    height: 150vh;
+                   
+                }
+        }
+      
+        #product-home-list .col1{
+            overflow: hidden;
+            width: 250px;
+            height: 400px;
+            background-image: url(pics/cake.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #product-home-list .col2{
+           
+            width:250px;
+            height:400px;
+            background-image:url(pics/bunch.jpg);
+            background-position-x: 40%;
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        #product-home-list .col3{
+         
+            width:250px;
+            height:400px;
+            background-image:url(pics/wedding.jpg);
+            background-position-x: 40%;
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        #product-home-list .col4{
+           
+            width:250px;
+            height:400px;
+            background-image:url(pics/offer.jpg);
+            background-position-x: 40%;
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        #product-home-list a{
+            /* overflow: auto; */
+            resize: both;
+           
+        }
+        #product-home-list a::-webkit-scrollbar{
+            display: none;
+        }
+        #about-us{
+            background-color: rgb(239, 239, 239);
+            margin-top: 50px;
+            padding-top: 70px;
+            padding-bottom: 10px;
+            height:50vh;
+            width:100%;
+            clear:left;
+        }
+        .items{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #about-text{
+            margin-top: 20px;
+            padding: 30px;
+            margin-left: 0;
+            max-width: 50%;
+            height: max-content;
+        }
+        #about-text span{
+            font-family:'Yeseva One';
+            font-size: 20px;
+            font-style: italic;
+            font-weight:normal;
+           
+        }
+        #about-us h1{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color:#11030b;
+            font-size: 60px;
+        }
+        #about-us h2{
+            margin: 0;
+            font-family: 'Yeseva One';
+            color:#ea8abd;
+            font-style: italic;
+            font-weight: lighter;
+            font-size: 20px;
+        }
+        @keyframes animate{
+            0%{
+                opacity:1;
+                
+                transform:translateY(0) rotate(0deg);
+            }
+            100%{
+                opacity:0;
+                
+                transform:translateY(-500px) rotate(180deg);
+            }
+        }
+        #animation div{
+            position: relative;
+            display: block;
+            width: 20px;
+            height: 20px;
+            bottom: -150;
+            animation: animate 15s linear infinite;
+        }
+        #animation div:nth-child(1){
+            left:25%;
+            width:80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+        #animation div:nth-child(2){
+            left:10%;
+            width: 50px;
+            height: 50px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+        #animation div:nth-child(3){
+            left:70%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+        #animation div:nth-child(4){
+            left:40%;
+            width:60px;
+            height:60px;
+            animation-delay:3s;
+        }
+        #animation div:nth-child(5){
+            left:65%;
+            width:20px;
+            height:20px;
+            animation-delay: 0s;
+        }
+        #animation div:nth-child(6){
+            left:75%;
+            width:110px;
+            height:110px;
+            animation-delay:3s;
+        }
+        #policy-container{
+            height: 70vh;
+            width:100%;
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items:center;
+        }
+        #policy{
+            width: 70%;
+            height: max-content;
+            padding: 100px;
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            background-color:  #f7cfe4;
+        }
+        #policy span{
+            font-size: 20px;
+        }
+        #policy h2{
+            font-size: 30px;
+        }
+        
+        #policy-item1{
+           max-width:50%;
+            height: fit-content;
+        }
+        #policy-item2{
+            max-width:50%;
+            height: fit-content;
+        }
+        #detail-container{
+            height: 70vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        #detail-items{
+            display: flex;
+           gap: 1rem;
+            align-items: center;
+            flex-direction: row;
+        }
+        #detail-text{
+            padding: 30px;
+            max-width: 50%;
+        }
+        #detail-text h2{
+            text-align: center;
+            margin: 0;
+            font-size: 50px;
+            color: #11030b;
+            font-family: 'Kaisei Decol', serif;
+        }
+        #detail-text h5{
+            margin: 0;
+            color: #d42583;
+            text-align: center;
+            font-family: 'Yeseva One';
+            font-style: italic;
+            font-weight: lighter;
+        }
+       .detail-para{
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .slider {
+            max-width: 50%;
+            height: 400px;
+            margin: 50px auto;
+            }
+            .slider__row {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                position: relative;
+                height: 200px;
+               
+                transition: 0.5s;
+            }
+            .row__item{
+                width: 200px;
+                height: 400px;
+            }
+            .slider__row img{
+                border-radius: 10px;
+            }
+            .divider{
+                width:2px;
+                height: 500px;
+                background-color: #d4d4d4;
+            }
+            #footer{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                left: 0%;
+                margin-top: 20px;
+               
+               background: linear-gradient(rgb(248, 248, 248)         , #f7cfe4);
+            }
+            #footer footer{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap:2rem;
+                
+                justify-content: center;
+            }
+            #footer-item1{
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                padding:50px;
+            }
+            #footer-item2{
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 5%;
+            }
+            #subscribe{
+                display:flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            #subscribe input[type=text]{
+                width:300px;
+                height: 30px;
+                border:1px solid  #f7cfe4;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                outline: none;
+                border-radius:5px;
+            }
+            #subscribe input[type=text]:focus{
+                border:1px solid #d42583;
+            }
+            #subscribe input[type=submit]{
+                width:150px;
+                height:40px;
+                background-color:  #f7cfe4 ;
+                border: none;
+                transition: 0.5s;
+                border-radius:5px;
+                
+            }
+            #subscribe input[type=submit]:hover{
+                background-color: #d2599a;
+            }
+    </style>
+</head>
+<body>
+   
+    <div id="main"> 
+        <div id="container">
+            <div id="home">
+                <div id="box">
+                    <span id="box-text"> Where Luxury and Nature Embrace.</span>
+                </div>
+            </div>
+            <div id="navbar-placeholder" style="position: sticky; top: 0%;"></div>
+            <div id="product-home">
+                <div id="product-home-list">
+                    <a href="cake.html">
+                        <div class="col1"></div>
+                    </a>
+                    <a href="flowers.html">
+                        <div class="col2"> </div>
+                    </a>
+                   <a href="wedding.html">
+                        <div class="col3"></div>
+                   </a>
+                    <a href="offers.html">
+                        <div class="col4"></div>
+                    </a>
+                </div>
+            </div>
+            <div id="about-us">
+               
+                <div class="items">
+                    <h1>HanaSumi</h1>
+                    <h2>-The Flower Haze-</h2>
+                    <div id="about-text">
+                        <span>With a heritage of over two decades, HanaSumi presents a collection of premium greenhouse-grown flowers that epitomize botanical elegance. Each blossom is a testament to our dedication to crafting nature's finest, meeting diverse floral needs with a touch of luxury.</span>
+                    </div>
+                </div>
+                <div id="animation">
+                    <div>
+                        <img src="animation/sakuraalarge.svg">
+                    </div>
+                    <div>
+                        <img src="animation/sakuraalarge.svg">
+                    </div>
+                    <div>
+                        <img src="animation/sakuraalarge.svg">
+                    </div>
+                    <div>
+                        <img src="animation/sakuraalarge.svg">
+                    </div>
+                    <div>
+                        <img src="animation/sakuraalarge.svg">
+                    </div>
+                    <div>
+                        <img src="animation/sakuraalarge.svg">
+                    </div>
+                    <div>
+                        <img src="animation/cherry-blossom-svgrepo-com.svg" style="width: 5%;">
+                    </div>
+                </div>   
+            </div>
+            <div id="policy-container">
+                <div id="policy">
+                    <div id="policy-item1">
+                        <span class="material-symbols-outlined">local_shipping</span>
+                        <h2>Fast and Reliable Delivery</h2>
+                        <span>We offer fast and reliable delivery services. Your flowers will be delivered to your doorstep with care and precision.</span>
+                    </div>
+                    <div id="policy-item2">
+                        <span class="material-symbols-outlined">place_item</span>
+                        <h2>Refunds</h2>
+                        <span>We offer a hassle-free refund policy for any damaged or unsatisfactory products/ Please contact our customer service within 7 days of receiving your order for assistance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="detail-container">
+        <div id="detail-items">
+            <div id="detail-text">
+                <h2>生け花 (ikebana)</h2>
+                <h5>-Flower Arrangement-</h5>
+                <div class="detail-para">
+                    <h3>Discover the Beauty of Japanese Floral Art</h3>
+                    <span> Immerse yourself in the mesmerizing world of Japanese floral art. Our Exquisite collection of handcrafted floral arrangements captures the essence of hanaSumi, The Flower Haze. Each arrangement is meticulously crafted to bring beauty and transquility to your space. Explore our online store and discover the perfect floral masterpiece for any occasion.</span>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="slider">
+                <div class="slider__row" id="row">
+                  <div class="row__item"><img src="detail/detail7.jpg" style="height: 400px; width: 300px;"></div>
+                  <div class="row__item"><img src="detail/detail3.jpg"style="height: 400px; width: 300px;"></div>
+                  <div class="row__item"><img src="detail/detail4.jpg"style="height: 400px; width: 300px;"></div>
+                  <div class="row__item"><img src="detail/detail2.jpg"style="height: 400px; width: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>
+            <div id="footer-item1">
+                <div id="subscribe">
+                    <h2 style="margin-bottom: 20px;">Subscribe to our Newsletter</h2>
+                    <label>Email Address</label>
+                    
+                    <input type="text" name="email" for="email" placeholder="Your Email address" style="::placeholder{left:10%}">
+                    
+                    <input class="button" type="submit" value="Subscribe">
+                </div>
+                <div id="contact">
+                    <div class="mail">
+                        <span type="email">info@hanasumi.com</span>
+                        <br>
+                        <span>+94 112 777 899</span>
+                    </div>
+                    <div class="address">
+                        <span>122 High Level Rd, Maharagama 10280</span>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-item2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.58632136868428!2d79.9298986325649!3d6.844829112249719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250702ee953a3%3A0x75665b106496d614!2s122%20High%20Level%20Rd%2C%20Maharagama%2010280!5e0!3m2!1sen!2slk!4v1691844967212!5m2!1sen!2slk" width="500" height="350" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    var toTop = 0;
+    function autoPlay(){
+    timer = setTimeout(function(){
+        var row = document.getElementById('row');
+        toTop = toTop - 128;
+        if (toTop < -1152){
+        toTop = 0;
+        clearTimeout(timer);
+        row.onmouseover = clearTimeout(timer);
+        }
+    row.style.top = toTop +'px';
+    autoPlay();
+    }, 3000);
+    }
+    autoPlay();
+
+</script>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouquets- The Flower Haze</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #flower-home{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           margin: 0;
+            width:100%;
+            height:50vh;
+            background-image: url(flower-background/annie-spratt-01Wa3tPoQQ8-unsplash.jpg);
+           
+            background-size: cover;
+            background-position-y: 50%;
+        }
+        #home-text{
+            backdrop-filter: brightness(150%);
+            color: #fff;
+            background-color: #d42583;
+            opacity: 55%;
+            padding: 50px;
+            border-radius: 5px;
+        }
+        #home-text h1{
+            opacity: 100%;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 7px;
+        }
+        #text{
+            display: flex;
+            justify-content: center;
+            width:100%;
+            height: 40vh;
+        }
+        #product-idea{
+            text-align: center;
+            max-width: 70%;
+            height: max-content;
+            margin-top: 2%;
+            padding: 30px;
+        }
+        #product-idea span{
+            font-family: 'Lora', serif;
+            font-size: 20px;
+            
+        }
+        .bloom{
+            color: #d42583;
+        }
+        #flower-products{
+            height: max-content;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        #products{
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content:center;
+
+            gap: 2rem;
+            padding: 50px;
+            margin-bottom: 30px;
+        }
+
+        #products img{
+            object-fit: cover;
+        }
+        .item1{
+            position: relative;
+            width:300px;
+            height: auto;
+            transition: 1s;
+        }
+       .hidden{
+            position: absolute;
+            display:flex;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height:100%;
+            text-align: center; 
+            background-color:#d42583 ;
+            align-items: center; 
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            visibility: hidden;
+             transition: opacity 0.7s, visibility 0.7s;
+       }
+       .hidden span{
+            padding: 40px;
+       }
+       .item1:hover .hidden{
+            opacity: 1;
+            visibility: visible;
+            
+       }
+
+       #text-product{
+            text-align: center;
+       }
+       #text-product h1{
+            font-family: 'Lora', sans-serif;
+            
+       }
+    </style>
+</head>
+<body>
+    <div id="flower-home">
+        <div id="home-text">
+            <h1>FLOWER BOUQUETS</h1>
+        </div>
+    </div>
+    <div id="navbar-placeholder" style="position: sticky; top: 0%; z-index: 1000;"></div>
+    <div id="text">
+        <div id="product-idea">
+            <span>Welcome to our exquisite flower bouquet collection. Each of our carefully crafted bouquets is a masterpiece of nature's beauty, designed to bring a touch of elegance and charm to any occasion. <span class="bloom">Our blooms  are hand-selected for their vibrant colors, delicate fragrances, and long-lasting freshness, ensuring that your bouquet remains a breathtaking centerpiece.</span><br> Whether you're celebrating a joyous milestone, expressing heartfelt sentiments, or simply brightening someone's day, our bouquets are a symbol of care and appreciation. Discover the artistry of nature with our stunning flower arrangements, thoughtfully curated to bring smiles and happiness to every moment.</span>
+        </div>
+    </div>
+    <main id="flower-products">
+        <div id="products">
+            <div class="item1">
+                <img src="products/prod1.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Blanche</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Immerse yourself in a world of purity with our Blanche Bunch. Delicate white blossoms dance together, creating an enchanting arrangement that whispers of elegance and grace. Perfect for adding a touch of serenity to any space.</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod2.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Delicate Flora</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Like a painter's masterpiece, the Delicate Flora bunch weaves a tapestry of colors and textures. Each bloom tells a story of nature's finest artistry, coming together in harmonious unity. Let these blooms paint your world with beauty.</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod3.png" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Eco Bunch</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Embrace the charm of nature's bounty with our Eco Bunch. Crafted with a sustainable touch, this arrangement celebrates the earth's vibrant hues and fragrant delights. A true embodiment of eco-conscious elegance</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod4.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Bijou</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Inspired by the daintiness of a jewel, the Bijou Bunch sparkles with its petite yet captivating blooms. Every flower is a precious gem, carefully curated to create a stunning display that captures hearts.</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod5.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Sweet Fantasy</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Indulge in a Sweet Fantasy with this bouquet that's straight out of a dream. Soft pastel petals and delicate fragrances conjure a world of enchantment and wonder. Let your imagination take flight.</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod6.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Angelic</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Elevate your surroundings to celestial heights with our Angelic Aura Arrangement. White and pale blooms come together, exuding an ethereal elegance that radiates purity and divinity.</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod7.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Weaver Bird</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Just as the weaver bird crafts intricate nests, our Weaver Bird Bunch weaves together a masterpiece of vibrant hues and delicate petals. Nature's symphony captured in a harmonious display.</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod8.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Exquisite</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Unveil the epitome of sophistication with our Exquisite Elegance Ensemble. Each flower is a stroke of refined beauty, meticulously arranged to create a statement of timeless grace.</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod9.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Floral Fantasy</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Step into a realm of whimsy and delight with our Floral Fantasy Medley. A playful dance of colors and forms, this arrangement is a celebration of nature's exuberance and charm.</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod10.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Love on my Mind</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Express the language of the heart with our Love on My Mind Bouquet. Radiant blooms stand as a testament to affection and devotion, making every glance a heartfelt connection.</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod11.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Sakura cented Bunch</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Welcome the ephemeral beauty of spring into your space with our Sakura Scented Bunch. Delicate cherry blossoms carry the essence of renewal, infusing the air with a captivating fragrance.</span></div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="products/prod12.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Sweet Bunch</h1>
+                    <span id="price">Rs. 6000.00</span>
+                    <div class="hidden"><span>Let your emotions sing with our Sweet Bunch Serenade. A chorus of gentle petals and fragrances, this arrangement is a poetic expression of tenderness and care.</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer">
+        <footer>
+            <div id="footer-item1">
+                <div id="subscribe">
+                    <h2 style="margin-bottom: 20px;">Subscribe to our Newsletter</h2>
+                    <label>Email Address</label>
+                    
+                    <input type="text" name="email" for="email" placeholder="Your Email address" style="::placeholder{left:10%}">
+                    
+                    <input class="button" type="submit" value="Subscribe">
+                </div>
+                <div id="contact">
+                    <div class="mail">
+                        <span type="email">info@hanasumi.com</span>
+                        <br>
+                        <span>+94 112 777 899</span>
+                    </div>
+                    <div class="address">
+                        <span>122 High Level Rd, Maharagama 10280</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

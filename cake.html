@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes - The Flower Haze</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+    <script src="index.js"></script>
+    <style>
+        #cake-home{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width:100%;
+            height:50vh;
+            background-image: url(flower-background/cake-back.jpg);
+            background-size: cover;
+            background-position-y: 70%;
+        }
+        #home-text{
+            backdrop-filter: brightness(150%);
+            color: #fff;
+            background-color: #d42583;
+            opacity: 55%;
+            padding: 50px;
+            border-radius: 5px;
+        }
+        #home-text h1{
+            opacity: 100%;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 7px;
+        }
+        #text{
+            display: flex;
+            justify-content: center;
+            width:100%;
+            height: 40vh;
+        }
+        #product-idea{
+            text-align: center;
+            max-width: 70%;
+            height: max-content;
+            margin-top: 2%;
+            padding: 30px;
+        }
+        #product-idea span{
+            font-family: 'Lora', serif;
+            font-size: 20px;
+            
+        }
+        .cakes{
+            color: #ea72b2;
+        }
+        #cake-products{
+            height:max-content;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        #products{
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content:center;
+
+            gap: 2rem;
+            padding: 50px;
+            margin-bottom: 30px;
+        }
+        #products img{
+            object-fit: cover;
+        }
+        .item1{
+            position: relative;
+            width:300px;
+            height: auto;
+            transition: 1s;
+        }
+       .hidden{
+            position: absolute;
+            display:flex;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height:100%;
+            text-align: center; 
+            background-color:#d42583 ;
+            align-items: center; 
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            visibility: hidden;
+             transition: opacity 0.7s, visibility 0.7s;
+       }
+       .hidden span{
+            padding: 40px;
+       }
+       .item1:hover .hidden{
+            opacity: 1;
+            visibility: visible;
+            
+       }
+
+       #text-product{
+            text-align: center;
+       }
+       #text-product h1{
+            font-family: 'Lora', sans-serif;
+            
+       }
+    </style>
+</head>
+<body>
+    <div id="cake-home">
+        <div id="home-text">
+            <h1>CAKES</h1>
+        </div>
+    </div>
+    <div id="navbar-placeholder" style="position: sticky; top: 0%;z-index: 1000;"></div>
+    <div id="text">
+        <div id="product-idea">
+            <span>Indulge in a symphony of flavors and artistry with our exquisite collection of handcrafted cakes. Each creation is a masterpiece, meticulously crafted to elevate your senses and celebrate life's most cherished moments.<span class="cakes"> Our cakes are a fusion of exceptional ingredients, innovative techniques, and a passion for perfection, resulting in a sensory journey that delights both the palate and the soul.</span >Elevate your moments with our sumptuous cakes, where every bite tells a story of opulence, passion, and the pursuit of culinary perfection. Welcome to a world where taste meets artistry, and every cake is a testament to the extraordinary.</span>
+        </div>
+    </div>
+    <main id="cake-products">
+        <div id="products">
+            <div class="item1">
+                <img src="cake products/cake5.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Black Choclate & Peach Glazed</h1>
+                    <span id="price">Rs. 7200.00</span>
+                    <div class="hidden">
+                        <span>Experience the captivating dance between deep, dark chocolate and the gentle allure of peach glaze. Our Black Chocolate & Peach Glazed cake is a study in contrasts, where the bittersweet meets the delicate, creating a delightful harmony of taste and texture.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="cake products/cake2.jpg"style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Choclate Swiss roll with Buttercream & Ganache</h1>
+                    <span id="price">Rs. 6800.00</span>
+                    <div class="hidden">
+                        <span>Unwrap the allure of velvety chocolate in our Swiss Roll masterpiece. A tender chocolate sponge embraces luscious layers of buttercream and a rich ganache drizzle. An indulgence that unveils layers of comfort and decadence.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="cake products/cake3.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Watermelons & Fruity lovers</h1>
+                    <span id="price">Rs. 3500.00</span>
+                    <div class="hidden">
+                        <span>Dive into a refreshing oasis of sweetness with our Watermelons & Fruity Lovers cake. Bursting with the juiciness of ripe watermelons and a medley of vibrant fruits, this creation is a vibrant symphony of summer's finest offerings.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item1">
+                <img src="cake products/cake4.jpg" style="height: 300px; width: 300px;">
+                <hr>
+                <div id="text-product">
+                    <h1>Dates & cherries with Sugar Coating</h1>
+                    <span id="price">Rs. 12,800.00</span>
+                    <div class="hidden">
+                        <span>A harmonious blend of succulent dates and tart cherries, adorned with a delicate sugar coating. This cake whispers of warmth and nostalgia, offering a delightful balance of flavors that will transport you to cherished moments.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer">
+        <footer>
+            <div id="footer-item1">
+                <div id="subscribe">
+                    <h2 style="margin-bottom: 20px;">Subscribe to our Newsletter</h2>
+                    <label>Email Address</label>
+                    
+                    <input type="text" name="email" for="email" placeholder="Your Email address" style="::placeholder{left:10%}">
+                    
+                    <input class="button" type="submit" value="Subscribe">
+                </div>
+                <div id="contact">
+                    <div class="mail">
+                        <span type="email">info@hanasumi.com</span>
+                        <br>
+                        <span>+94 112 777 899</span>
+                    </div>
+                    <div class="address">
+                        <span>122 High Level Rd, Maharagama 10280</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
